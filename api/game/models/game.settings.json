@@ -2,13 +2,11 @@
   "kind": "collectionType",
   "collectionName": "games",
   "info": {
-    "name": "game",
-    "description": ""
+    "name": "game"
   },
   "options": {
     "increments": true,
-    "timestamps": true,
-    "draftAndPublish": true
+    "timestamps": true
   },
   "attributes": {
     "name": {
@@ -19,8 +17,7 @@
     "slug": {
       "type": "uid",
       "targetField": "name",
-      "required": true,
-      "private": false
+      "required": true
     },
     "short_description": {
       "type": "text",
@@ -42,12 +39,12 @@
     "rating": {
       "type": "enumeration",
       "enum": [
-        "FREE",
-        "pegi3",
-        "pegi7",
-        "pegi12",
-        "pegi16",
-        "pegi18"
+        "BR0",
+        "BR10",
+        "BR12",
+        "BR14",
+        "BR16",
+        "BR18"
       ]
     },
     "cover": {

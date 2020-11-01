@@ -42,7 +42,6 @@ const MediaLib = ({ isOpen, onChange, onToggle }) => {
         allowedTypes={["images", "videos", "files"]}
         isOpen={isOpen}
         multiple={false}
-        noNavigation
         onClosed={handleClosed}
         onInputMediaChange={handleInputChange}
         onToggle={onToggle}

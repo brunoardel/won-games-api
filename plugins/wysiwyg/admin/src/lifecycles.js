@@ -1,4 +1,3 @@
-const pluginPkg = require("../../package.json");
-const pluginId = pluginPkg.name.replace(/^strapi-plugin-/i, "");
+function lifecycles() {}
 
-module.exports = pluginId;
+export default lifecycles;

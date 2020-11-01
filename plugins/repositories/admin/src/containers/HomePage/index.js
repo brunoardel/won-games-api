@@ -6,6 +6,7 @@ import axios from "axios";
 
 const Wrapper = styled.div`
   padding: 18px 30px;
+
   p {
     margin-top: 1rem;
   }
@@ -42,7 +43,11 @@ const HomePage = () => {
         title={{ label: "React Avançado Repositories" }}
         content="A list of our repositories in React Avançado course."
       />
-      <Table headers={headers} rows={rows} />
+      <Table
+        headers={headers}
+        rows={rows}
+        onClickRow={(e, data) => window.open(data.html_url, "_blank")}
+      />
     </Wrapper>
   );
 };
